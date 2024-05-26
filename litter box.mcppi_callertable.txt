@@ -1,0 +1,14 @@
+main
+	ATD_init
+	msDelay
+	ATD_read
+	Mul_16x16_U
+	Div_16x16_S
+		Div_16x16_S_L
+	Int2Double
+		NRM3232
+			RES032
+			SETFUN32
+			FIXSIGN32
+	Compare_Double
+interrupt
